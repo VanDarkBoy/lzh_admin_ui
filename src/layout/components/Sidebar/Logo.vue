@@ -6,13 +6,13 @@
   >
     <transition :enter-active-class="proxy?.animate.logoAnimate.enter" mode="out-in">
       <router-link v-if="collapse" key="collapse" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo" />
+        <img v-if="logo" :src="logo" class="sidebar-logo" alt="东莞市锂智慧能源有限公司" />
         <h1 v-else class="sidebar-title" :style="{ color: sideTheme === 'theme-dark' ? variables.logoTitleColor : variables.logoLightTitleColor }">
           {{ title }}
         </h1>
       </router-link>
       <router-link v-else key="expand" class="sidebar-logo-link" to="/">
-        <img v-if="logo" :src="logo" class="sidebar-logo" />
+        东莞市锂智慧能源有限公司
         <h1 class="sidebar-title" :style="{ color: sideTheme === 'theme-dark' ? variables.logoTitleColor : variables.logoLightTitleColor }">
           {{ title }}
         </h1>
@@ -34,7 +34,7 @@ defineProps({
   }
 });
 
-const title = ref('RuoYi-Vue-Plus');
+const title = ref('东莞市锂智慧能源有限公司');
 const settingsStore = useSettingsStore();
 const sideTheme = computed(() => settingsStore.sideTheme);
 </script>

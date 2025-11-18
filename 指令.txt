@@ -1,0 +1,7 @@
+cd  /usr/share/nginx/html
+
+unrar x dist.rar
+
+rm dist.rar
+
+cd ~
